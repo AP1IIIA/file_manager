@@ -1,5 +1,4 @@
 #include "MainWindow.h"
-#include "ui_MainWindow.h"
 #include "Pane.h"
 #include "PreferencesDialog.h"
 #include "Properties.h"

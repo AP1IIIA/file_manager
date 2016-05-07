@@ -69,7 +69,7 @@ void Pane::doubleClickedOnEntry(QModelIndex index)
     QFileInfo fileInfo(mainWindow->fileSystemModel->filePath(index));
 
     if(fileInfo.isDir())
-        moveTo(fileInfo.absoluteFilePath()/* resolves the double dot entry */);
+        moveTo(fileInfo.absoluteFilePath());
     else if (fileInfo.isExecutable()) {
         QProcess *process = new QProcess(this);
         process->startDetached(fileInfo.absoluteFilePath());
